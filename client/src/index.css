@@ -1,0 +1,199 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+body{
+  background: rgb(63,9,63);
+}
+.notes-page{
+  width: 100%;
+  min-height: 100vh;
+  color: whitesmoke;
+}
+.notes-page header{
+  max-width: 1920px;
+  min-height: 100px;
+  overflow: hidden;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+a{
+  text-decoration: none;
+  color: whitesmoke;
+}
+.notes-page header .logo{
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.notes-page header ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 0 15px;
+}
+.notes-page header ul li a{
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+.notes-page header ul li a:hover{
+  opacity: 1;
+}
+.notes-page section{
+  width: 100%;
+  box-shadow: 0 0 5px rgb(7,25,63);
+  padding: 20px 0;
+}
+.note-wrapper{
+  max-width: 1920px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+}
+.card{
+  width: 300px;
+  box-shadow: 0 0 5px rgb(7,25,63);
+  background: rgb(7,25,63);
+  padding: 10px;
+  position: relative;
+  color: #ddd;
+  margin: 15px;
+  cursor: pointer;
+}
+.card .close{
+  position: absolute;
+  top:0;
+  right: 10px;
+  font-weight: 900;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+}
+.card h4{
+  margin-right: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.card .text-wrapper{
+  width: 100%;
+  height: 150px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 7;
+  overflow: hidden;
+  margin: 10px 0;
+  color: #fff9;
+}
+.card .date{
+  text-align: right;
+  color: wheat;
+}
+.card-footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+/* ******* Create Note******************* */
+.create-note{
+  max-width: 500px;
+  width: 100%;
+  margin: auto;
+  border: 10px solid #ccc;
+  padding: 30px;
+}
+.create-note h2{
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+.create-note .row{
+  width: 100%;
+  margin: 10px 0;
+}
+.create-note input,
+.create-note button{
+  width: 100%;
+  height: 40px;
+  padding:  0 5px;
+}
+.create-note label{
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.create-note textarea{
+  width: 100%;
+  resize: none;
+  padding: 0 5px;
+}
+.create-note button{
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: rgb(7,25,63);
+}
+@media (max-width: 500px){
+  .create-note{
+    padding: 15px;
+    border: 5px solid #ccc;
+  }
+}
+
+/* *********Login / Register******* */
+.login-page{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+}
+.login input,
+.register input{
+  margin-bottom: 15px;
+}
+.login,
+.register{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(63,9,63);
+}
+.login-page h2,
+.login-page h3{
+  color: #fff8;
+}
+.login-page h3{
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+.login-page p{
+  margin: 10px 0;
+  color: white;
+}
+.login-page span:hover{
+  color: orange;
+  cursor: pointer;
+}
