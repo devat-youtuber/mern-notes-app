@@ -24,5 +24,5 @@
 
 ### Server runs on http://localhost:5000 and client on http://localhost:3000
 
-![alt](https://i9.ytimg.com/vi/8_iYaOjIO-M/maxresdefault.jpg?time=1599106200000&sqp=CJjZwfoF&rs=AOn4CLDB2y5SWYlDBr4PQAwPY226Hoxdvg)
+![alt](https://res.cloudinary.com/devatchannel/image/upload/v1599566864/test/maxresdefault_1_oecdfa.jpg)
 
